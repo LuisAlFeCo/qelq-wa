@@ -1,0 +1,11 @@
+{
+	"presets": [
+		["env", {
+			"targets": {
+				"node": "8.11.4",
+				"browsers": ["chrome >= 56"]
+			}
+		}],
+		"react"
+	]
+}

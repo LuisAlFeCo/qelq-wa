@@ -1,0 +1,51 @@
+
+/****************************************************************************************
+
+	Copyright (c) 2018, QELQ.
+	Author: Juan Carlos Labrandero.
+	For conditions of distribution and use, see copyright notice in LICENSE
+
+****************************************************************************************/
+
+.verify-email-container {
+	margin: 3rem auto;
+	padding: 0.6rem;
+	width: 90%;
+
+	.card {
+		padding: 1.8rem;
+	}
+
+	.verify-email-icon {
+		width: 5rem;
+		height: 5rem;
+		fill: $primary-color
+	}
+
+	.verify-email {
+		color: #21618C;
+		font-weight: bold;
+	}
+
+	button {
+		background-color: $primary-color;
+		border: none;
+		border-radius: 3px;
+		font-size: 1rem;
+		font-weight: bold;
+		color: white;
+		display: inline-block;
+		padding: 0.6rem 1.2rem;
+	}
+}
+
+@media #{$medium-and-up} {
+	.verify-email-container {
+		width: 65%;
+	}
+}
+@media #{$large-and-up} {
+	.verify-email-container {
+		width: 45%;
+	}
+}

@@ -1,0 +1,39 @@
+
+.student-tools-section {
+	border-bottom: solid 1px #e0e0e0;
+	padding: 1rem 0 0.4rem 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	.button {
+
+	}
+}
+
+.student-item {
+	display: flex;
+	border-bottom: dashed 1px gray;
+	padding: 0.6rem;
+
+	img {
+		width: 3.2rem;
+		border-radius: 50%;
+		margin-right: 1rem;
+	}
+
+	.student-item-name {
+		a {
+			font-size: 1.1rem;
+			font-weight: bold;
+			color: #21618C;
+			text-decoration: none;
+		}
+	}
+
+	.student-item-summary {
+		color: #546e7a;
+		margin: 0.1rem 0;
+		font-size: 0.9rem;
+	}
+}

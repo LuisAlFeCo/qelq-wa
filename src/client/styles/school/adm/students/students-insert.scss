@@ -1,0 +1,16 @@
+
+.students-insert-container {
+	margin: 0 auto;
+	width: 90%;
+}
+
+@media #{$medium-and-up} {
+	.students-insert-container {
+		width: 65%;
+	}
+}
+@media #{$large-and-up} {
+	.students-insert-container {
+		width: 42%;
+	}
+}

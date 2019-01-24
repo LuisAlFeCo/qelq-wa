@@ -1,0 +1,37 @@
+
+/****************************************************************************************
+
+	Copyright (c) 2018, QELQ.
+	Author: Juan Carlos Labrandero.
+	For conditions of distribution and use, see copyright notice in LICENSE
+
+****************************************************************************************/
+
+.school-head-container {
+	margin-top: 1.4rem;
+
+	.public {
+		display: flex;
+		align-items: center;
+
+		svg {
+			width: 1.6rem;
+			fill: #546e7a;
+			padding-right: 0.4rem;
+		}
+
+		.author,
+		.name {
+			a {
+				font-size: 1.3rem;
+				color: #2E86C1;
+				text-decoration: none;
+			}
+		}
+
+		.path-divider {
+			font-size: 1.3rem;
+			padding: 0 0.2rem;
+		}
+	}
+}

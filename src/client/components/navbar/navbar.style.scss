@@ -1,0 +1,182 @@
+
+/****************************************************************************************
+
+	Copyright (c) 2018, QELQ.
+	Author: Juan Carlos Labrandero.
+	For conditions of distribution and use, see copyright notice in LICENSE
+
+****************************************************************************************/
+
+nav {
+	background-color: white;
+	box-shadow: 2px 2px 10px lightgray;
+	
+	.nav-wrapper {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin: 0 auto;
+	}
+
+	ul.nav-menu {
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-direction: row;
+		list-style-type: none;
+		height: 3.3rem;
+		overflow: visible;
+
+		li {
+			.nav-link,
+			.nav-brand,
+			.nav-user-wrapper,
+			.nav-dropdown-wrapper {
+				cursor: pointer;
+				height: 100%;
+				display: flex;
+				align-items: center;
+				padding: 0 0.6rem;
+			}
+
+			.nav-link {
+				padding: 0 1rem;
+
+				a {
+					color: #424242;
+					text-decoration: none;
+					font-weight: bold;
+					cursor: pointer;
+				}
+			}
+
+			.nav-link:hover {
+				a {
+					color: #e65100;
+				}
+			}
+
+			.nav-brand {
+				.nav-brand-logo {
+					fill: $primary-color;
+					height: 90%;
+					margin: 10%;
+				}
+			}
+
+			.nav-user,
+			.nav-dropdown {
+				position: relative;
+			}
+
+			.nav-user-wrapper {
+				img {
+					height: 2.2rem;
+					margin-right: 0.2rem;
+					border-radius: 50%;
+				}
+			}
+
+			.nav-dropdown-wrapper {
+				.nav-dropdown-icon {
+					height: 1.8rem;
+					fill: #37474f;
+				}
+			}
+
+			.nav-user-dropdown,
+			.nav-dropdown-menu {
+				display: none;
+				position: absolute;
+				background-color: white;
+				box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.2);
+				border: 1px solid lightgrey;
+				border-radius: 3px;
+				min-width: 10rem;
+				padding: 0.6rem 0;
+				right: 0;
+				
+				z-index: 100;
+			}
+
+			.nav-user-dropdown {
+				white-space: nowrap;
+
+				.nav-user-header {
+					display: flex;
+					flex-direction: row;
+					padding: 0.6rem;
+					margin-bottom: 0.6rem;
+					border-bottom: 1px solid lightgrey;
+
+					.nav-user-icon,
+					.nav-user-name,
+					.nav-user-email {
+						margin: 0 0.4rem;
+					}
+
+					.nav-user-icon {
+						height: 2.8rem;
+						width: 2.8rem;
+						border-radius: 50%;
+					}
+
+					.nav-user-name {
+						font-weight: bold;
+					}
+
+					.nav-user-email {
+						font-size: 0.9rem;
+						color: gray;
+					}
+				}
+
+				.nav-user-link {
+					display: block;
+					color: #424242;
+					padding: 0.4rem 2rem;
+					text-decoration: none;
+				}
+
+				.nav-user-link:hover {
+					background-color: #90a4ae;
+					color: white;
+					cursor: pointer;
+				}
+			}
+
+			.nav-dropdown-menu {
+
+				.nav-dropdown-link {
+					display: block;
+					color: #424242;
+					padding: 0.4rem 2rem;
+					text-decoration: none;
+				}
+
+				.nav-dropdown-link:hover {
+					background-color: #90a4ae;
+					color: white;
+					cursor: pointer;
+				}
+			}
+
+			.nav-user-dropdown-show,
+			.nav-dropdown-menu-show {
+				display:block;
+			}
+		}
+	}
+
+	@media #{$medium-and-up} {
+		.nav-wrapper {
+			width: 90%;
+		}
+	}
+
+	@media #{$large-and-up} {
+		.nav-wrapper {
+			width: 80%;
+		}
+	}
+}

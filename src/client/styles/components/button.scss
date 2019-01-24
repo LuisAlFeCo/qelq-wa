@@ -1,0 +1,27 @@
+
+.button,
+.button-cancel {
+	border: none;
+	border-radius: 3px;
+	font-size: 1rem;
+	font-weight: bold;
+	color: white;
+	display: inline-block;
+	padding: 0.8rem;
+	margin-bottom: 0.7rem;
+	vertical-align: middle;
+	text-decoration: none;
+	text-align: center;
+	line-height: 16px;
+	cursor: pointer;
+	width: 100%;
+	box-sizing : border-box;
+}
+
+.button {
+	background-color: $primary-color;
+}
+
+.button-cancel {
+	background-color: grey;
+}

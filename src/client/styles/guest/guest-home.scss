@@ -1,0 +1,73 @@
+
+.guest-cover-container {
+    display: flex;
+    width: 100%;
+    background-color: #127FDA;
+    color: white;
+
+    .guest-cover-left {
+        padding: 2rem 2rem 4rem 2rem;
+
+        svg {
+            width: 8rem;
+            fill: darkorange;
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 4rem;
+        }
+        .guest-cover-btn {
+            background-color: #013C6D;
+            color: white;
+            padding: 0.8rem 2em;
+            border: none;
+            border-radius: 20px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            outline: none;
+            text-decoration: none;
+        }
+    }
+
+    .guest-cover-right {
+        display: none;
+        max-width: 40%;
+        padding: 6rem;
+
+        img {
+            border-radius: 50%;
+        }
+    }
+}
+
+.guest-home-ad {
+    text-align: center;
+    padding: 3rem 2rem;
+
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+@media #{$medium-and-up} {
+}
+
+@media #{$large-and-up} {
+	.guest-cover-container {
+        .guest-cover-left {
+            padding: 6rem;
+        }
+		.guest-cover-right {
+            display: block;
+        }
+    }
+    .guest-home-ad {
+        padding: 4rem 18rem;
+    }
+}

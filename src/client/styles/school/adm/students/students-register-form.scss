@@ -1,0 +1,25 @@
+
+.student-register-form {
+
+	.school-register-section {
+		padding: 0.6rem 0 1.4rem 0;
+
+		.input-group {
+			margin-top: 0.6rem;
+		}
+
+		.input-smw {
+			width: 70%;
+		}
+
+		@media #{$large-and-up} {
+			.input-smw {
+				width: 50%;
+			}
+		}
+
+		button {
+			margin-top: 1.4rem;
+		}
+	}
+}

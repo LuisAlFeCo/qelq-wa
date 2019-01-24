@@ -1,0 +1,18 @@
+
+.card {
+	border: 1px solid #bdbdbd;
+	border-radius: 4px;
+	padding: 1.2rem;
+}
+
+@media #{$medium-and-up} {
+	.card {
+		padding: 1.4rem;
+	}
+}
+
+@media #{$large-and-up} {
+	.card {
+		padding: 1.8rem;
+	}
+}

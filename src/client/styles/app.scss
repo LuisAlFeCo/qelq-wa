@@ -1,0 +1,37 @@
+
+/****************************************************************************************
+
+	Copyright (c) 2018, QELQ.
+	Author: Juan Carlos Labrandero.
+	For conditions of distribution and use, see copyright notice in LICENSE
+
+****************************************************************************************/
+
+@import 'global/variables';
+@import 'global/global';
+@import 'global/typography';
+@import 'global/grid';
+
+@import 'components/input';
+@import 'components/button';
+@import 'components/card';
+@import 'components/modal';
+
+@import '../components/navbar/navbar.style';
+//@import '../components/card/error-card.style';
+@import '../components/modal/loader/loader-modal.style';
+@import '../components/modal/error/error-modal.style';
+
+@import '/guest/guest-home';
+
+@import '/account/signin';
+@import '/account/signup';
+@import '/account/verify-email';
+@import '/account/profile';
+
+@import '/basic/school-register';
+//@import '/main/school';
+
+@import '/school/adm/students/students-index';
+@import '/school/adm/students/students-register-form';
+@import '/school/adm/students/students-insert';

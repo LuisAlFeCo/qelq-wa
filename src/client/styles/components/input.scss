@@ -1,0 +1,43 @@
+
+.input-group {
+	display: flex;
+    flex-direction: column;
+
+    .input-label {
+		order: -1;
+		font-size: 13px;
+		color: gray;
+	}
+	
+	.input-error-label {
+		font-size: 0.9rem;
+		color: red;
+	}
+    
+    input[type=text],
+	input[type=password],
+	input[type=email],
+	input[type=date],
+	input[type=datalist],
+	input[type=number],
+	input[type=color], {
+		width: 100%;
+		box-sizing: border-box;
+		border: 1px solid #bdbdbd;
+		border-radius: 3px;
+		font-size: 14px;
+		background-color: white;
+		padding: 9px;
+		margin: 0.2rem 0 0.2rem 0;
+		outline: none;
+
+		&:focus {
+			border: 1px solid rgb(12, 118, 171);
+		}
+
+		&:focus + .input-label {
+			color: rgb(12, 118, 171);
+			font-weight: bold;
+		}
+	}
+}

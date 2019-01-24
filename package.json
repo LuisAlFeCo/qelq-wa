@@ -1,0 +1,50 @@
+{
+  "name": "qelq-wa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-dev": "webpack --watch --mode development",
+    "start-dev-server": "nodemon --watch dist dist/index.js --ignore dist/assets",
+    "start-dev-sync": "browser-sync start --proxy 'localhost:3100' --files './dist/'",
+    "build": "webpack -p",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Juan Carlos Labrandero",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "jsonfile": "^5.0.0",
+    "react": "^16.5.1",
+    "react-dom": "^16.5.1"
+  },
+  "devDependencies": {
+    "apollo-cache-inmemory": "^1.2.10",
+    "apollo-client": "^2.4.2",
+    "apollo-link-context": "^1.0.8",
+    "apollo-link-http": "^1.5.4",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "browser-sync": "^2.26.3",
+    "copy-webpack-plugin": "^4.5.2",
+    "css-loader": "^1.0.0",
+    "eslint": "^5.6.0",
+    "eslint-plugin-node": "^7.0.1",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "graphql": "^14.0.2",
+    "graphql-tag": "^2.9.2",
+    "moment": "^2.22.2",
+    "node-sass": "^4.9.3",
+    "nodemon": "^1.18.4",
+    "password-strength-calc": "^1.0.0",
+    "react-apollo": "^2.1.11",
+    "react-router-dom": "^4.3.1",
+    "sass-loader": "^7.1.0",
+    "validator": "^10.7.1",
+    "webpack": "^4.19.0",
+    "webpack-cli": "^3.1.0"
+  }
+}

@@ -1,0 +1,72 @@
+
+/****************************************************************************************
+
+	Copyright (c) 2018, QELQ.
+	Author: Juan Carlos Labrandero.
+	For conditions of distribution and use, see copyright notice in LICENSE
+
+****************************************************************************************/
+
+.signin-header {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin: 1rem 0;
+
+	.signin-icon {
+		width: 5rem;
+		height: 5rem;
+		fill: $primary-color
+	}
+}
+
+.signin-container {
+	margin: 1rem auto 1rem auto;
+	padding: 0.6rem;
+	width: 90%;
+
+	h6 {
+		margin: 1.6rem 0;
+	}
+
+	.input-group {
+		padding-bottom: 1rem;
+	}
+
+	.button {
+		margin-top: 1rem;
+	}
+
+	.signin-ad {
+		text-align: center;
+		margin-bottom: 1rem;
+		
+		span {
+			font-size: 0.9rem;
+
+			a {
+				font-weight: bold;
+				color: #21618C;
+				text-decoration: none;
+			}
+		}
+	}
+
+	.signin-trademark {
+		margin-bottom: 1rem;
+		span {
+			font-size: 0.8rem;
+		}
+	}
+}
+
+@media #{$medium-and-up} {
+	.signin-container {
+		width: 65%;
+	}
+}
+@media #{$large-and-up} {
+	.signin-container {
+		width: 32%;
+	}
+}
